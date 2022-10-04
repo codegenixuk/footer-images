@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+
+        <tab id="codegenixuk" translate="label" sortOrder="999">
+            <label>Codegenixuk</label>
+        </tab>
+
+        <section id="codegenixuk_footerimages" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+
+            <class>separator-top</class>
+
+            <label>Footer Images</label>
+
+            <tab>codegenixuk</tab>
+
+            <resource>Codegenixuk_FooterImages::footerimages_config</resource>
+
+            <group id="config" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+
+                <label>Enable</label>
+
+                <field id="enable" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable Footer Images</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="title" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                    <comment>Enter a title for this section.</comment>
+                </field>
+
+                <field id="subtitle" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sub title</label>
+                    <comment>Enter a sub title for this section.</comment>
+                </field>
+
+            </group>
+
+            <group id="block1" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+
+                <label>Block 1</label>
+
+                <field id="content" translate="label" type="textarea" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Content</label>
+                    <comment>Image or Text</comment>
+                </field>
+
+            </group>
+
+            <group id="block2" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+
+                <label>Block 2</label>
+
+                <field id="content" translate="label" type="textarea" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Content</label>
+                    <comment>Image or Text</comment>
+                </field>
+
+            </group>
+
+            <group id="block3" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+
+                <label>Block 3</label>
+
+                <field id="content" translate="label" type="textarea" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Content</label>
+                    <comment>Image or Text</comment>
+                </field>
+
+            </group>
+
+            <group id="block4" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+
+                <label>Block 4</label>
+
+                <field id="content" translate="label" type="textarea" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Content</label>
+                    <comment>Image or Text</comment>
+                </field>
+
+            </group>
+
+            <group id="block5" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+
+                <label>Block 5</label>
+
+                <field id="content" translate="label" type="textarea" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Content</label>
+                    <comment>Image or Text</comment>
+                </field>
+
+            </group>
+
+            <group id="block6" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+
+                <label>Block 6</label>
+
+                <field id="content" translate="label" type="textarea" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Content</label>
+                    <comment>Image or Text</comment>
+                </field>
+
+            </group>
+
+            <group id="block7" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+
+                <label>Block 7</label>
+
+                <field id="content" translate="label" type="textarea" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Content</label>
+                    <comment>Image or Text</comment>
+                </field>
+
+            </group>
+
+        </section>
+
+    </system>
+
+</config>
+

@@ -1,0 +1,143 @@
+@grey1:     #fafafa;
+@grey2:     #f2f2f2;
+@grey3:     #888;
+
+
+//
+//  Common (styles-m.css)
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    .cg-above-footer-3{
+
+        background: white;
+
+        .block{
+            &.footer-images{
+                border-bottom: 1px solid @grey2;
+                margin: auto;
+                width: 100%;
+                max-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 7rem 0 7rem 0;
+
+                .content{
+                    width:100%;
+                }
+
+                .title-wrap{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    h2{
+                        font-size: 4rem;
+                        margin: 0 0 3rem 0;
+                    }
+
+                    p{
+                        font-size: 2rem;
+                        margin: 0 0 3.5rem 0;
+                    }
+
+                }
+
+                ul{
+                    list-style-type: none;
+                    padding: 0;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+
+                    li{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                .top-level{
+                    flex-direction: row;
+
+                    > li{
+                        &:first-child{
+                            width: 40%;
+                            border: solid 10px white;
+
+                            &:hover{
+                                &:after{
+                                    opacity: 1;
+                                    visibility: visible;
+                                    transition: all 300ms ease;
+                                    background: rgba(0,0,0,20%);
+                                }
+                            }
+
+                            &:after{
+                                content:" ";
+                                width:100%;
+                                height: 100%;
+                                position: absolute;
+                                top:0;
+                                left:0;
+                                background: black;
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+
+                        }
+
+                        &:last-child{
+                            width: 60%
+                        }
+                    }
+                }
+
+                .sub-level{
+                    flex-wrap: wrap;
+
+                    > li{
+                        width: ~"calc( 33% - 20px)";
+                        min-height: 230px;
+                        margin: 0;
+                        border: solid 10px white;
+
+                        img{
+                            object-fit: cover;
+                            object-position: center;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        &:hover{
+                            &:after{
+                                opacity: 1;
+                                visibility: visible;
+                                transition: all 300ms ease;
+                                background: rgba(0,0,0,20%);
+                            }
+                        }
+
+                        &:after{
+                            content:" ";
+                            width:100%;
+                            height: 100%;
+                            position: absolute;
+                            top:0;
+                            left:0;
+                            background: black;
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

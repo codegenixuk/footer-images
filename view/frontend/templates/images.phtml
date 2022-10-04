@@ -1,0 +1,58 @@
+<?php
+$helper = $this->helper('Codegenixuk\FooterImages\Helper\Data');
+?>
+
+<div class="block footer-images">
+
+    <div class="content">
+
+        <div class="title-wrap">
+
+            <?php if ($title = $helper->getTitle()): ?>
+
+                <h2><?=__($title);?></h2>
+
+            <?php endif; ?>
+
+            <?php if ($subTitle = $helper->getSubTitle()): ?>
+
+                <p><?=__($subTitle);?></p>
+
+            <?php endif; ?>
+
+        </div>
+
+        <ul class="top-level">
+
+            <?php if ($content = $helper->getContent('block1')): ?>
+
+                <li><?= $content; ?></li>
+
+            <?php endif;?>
+
+            <li>
+
+                <ul class="sub-level">
+
+                    <?php foreach ([2,3,4,5,6,7] as $block): ?>
+
+                        <?php $key = 'block' . $block; ?>
+
+                        <?php if ($content = $helper->getContent($key)): ?>
+
+                            <li><?= $content; ?></li>
+
+                        <?php endif;?>
+
+                    <?php endforeach; ?>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+

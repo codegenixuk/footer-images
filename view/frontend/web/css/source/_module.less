@@ -15,7 +15,7 @@
 
         .block{
             &.footer-images{
-                border-bottom: 1px solid @grey2;
+                //border-bottom: 1px solid @grey2;
                 margin: auto;
                 width: 100%;
                 max-width: 100%;
@@ -23,9 +23,12 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                padding: 7rem 0 7rem 0;
-
                 overflow: hidden;
+                padding: 0 0 4rem 0;
+
+                @media(min-width: 768px){
+                    padding: 7rem 0 7rem 0;
+                }
 
                 .content{
                     width:100%;
@@ -76,6 +79,7 @@
                         &:first-child{
                             width: 40%;
                             border: solid 10px white;
+                            margin-left: -10px;
 
                             &:hover{
                                 &:after{
@@ -88,7 +92,7 @@
 
                             &:after{
                                 content:" ";
-                                width:100%;
+                                width: ~"calc(100% - 10px)";
                                 height: 100%;
                                 position: absolute;
                                 top:0;
